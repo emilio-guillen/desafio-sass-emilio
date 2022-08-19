@@ -1,0 +1,260 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+h1 {
+  font-weight: 700;
+  margin-top: 10px; }
+
+h2 {
+  font-weight: 700;
+  margin-top: 10px; }
+
+.menu {
+  background-color: black; }
+
+.menu-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px; }
+
+.menu-logo {
+  display: flex;
+  margin-left: 20px; }
+
+.menu-accesos {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px; }
+
+.menu-secciones {
+  display: none;
+  margin: 0px 10px; }
+
+.menu-boton {
+  color: white;
+  border-width: 0px;
+  font-size: 20px;
+  background-image: url(icons/menu.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding-left: 30px; }
+
+.seccion-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px; }
+
+.seccion-1-titulo {
+  margin: auto 20px; }
+
+.seccion-1-texto {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  order: 2;
+  width: 80%;
+  text-align: justify;
+  justify-content: center; }
+  .seccion-1-texto a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px; }
+
+.seccion-1-img {
+  width: 300px;
+  margin-top: 20px;
+  transition: 0.5s; }
+  .seccion-1-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s; }
+
+.seccion-2 {
+  margin: 0px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #eeaeca;
+  background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%); }
+
+.seccion-2-texto {
+  width: 80%;
+  text-align: center; }
+  .seccion-2-texto a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px; }
+
+.seccion-3 a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 7px; }
+
+.seccion-4 {
+  padding: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightgrey; }
+
+.seccion-4-texto {
+  width: 80%;
+  text-align: center; }
+
+.seccion-5 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .seccion-5 a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px; }
+
+.seccion-5-texto {
+  text-align: center; }
+
+.seccion-5-img {
+  order: 2; }
+
+footer {
+  color: whitesmoke;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+.menu-footer {
+  display: none; }
+
+.titulo-galeria {
+  text-align: center; }
+
+.galeria {
+  display: grid;
+  margin: 30px auto;
+  justify-content: center;
+  grid-column-gap: 40px;
+  grid-template-areas: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "obra1" "obra2" "obra3" "obra4"; }
+
+.pintura-1 {
+  grid-area: obra1;
+  text-align: center; }
+
+.pintura-2 {
+  grid-area: obra2;
+  text-align: center; }
+
+.pintura-3 {
+  grid-area: obra3;
+  text-align: center; }
+
+.pintura-4 {
+  grid-area: obra4;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+    margin: 10px auto; }
+  h2 {
+    font-size: 40px;
+    margin: 10px auto; }
+  .menu {
+    display: flex;
+    justify-content: center; }
+  .menu-info {
+    flex-wrap: nowrap;
+    flex: 1; }
+  .menu-secciones {
+    display: flex;
+    column-gap: 20px; }
+    .menu-secciones a {
+      color: white;
+      text-decoration: none; }
+  .menu-boton {
+    display: none; }
+  .seccion-1 {
+    display: grid;
+    justify-items: center;
+    margin: 50px auto;
+    width: 80%;
+    grid-column-gap: 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo imagen" "texto imagen"; }
+  .seccion-1-titulo {
+    display: flex;
+    margin: auto;
+    grid-area: titulo; }
+  .seccion-1-texto {
+    display: flex;
+    grid-area: texto; }
+  .seccion-1-img {
+    grid-area: imagen; }
+  .seccion-2 {
+    flex-wrap: nowrap;
+    align-items: center; }
+  .seccion-2-texto {
+    width: auto;
+    text-align: center;
+    margin: 20px; }
+  .seccion-3-texto {
+    width: 50%; }
+  .seccion-3-img {
+    width: 100%; }
+  .seccion-4 {
+    column-gap: 60px;
+    align-items: center; }
+  .seccion-4-texto {
+    width: 45%; }
+  footer {
+    justify-content: space-around; }
+  .menu-footer {
+    display: flex;
+    margin: 10px; }
+  .menu-footer-secciones {
+    display: flex;
+    column-gap: 10px;
+    margin: 0px 10px; }
+    .menu-footer-secciones a {
+      color: white;
+      text-decoration: none;
+      margin: 0px 10px; }
+  a:hover {
+    color: palegreen; }
+  .galeria {
+    display: grid;
+    margin: 30px auto;
+    justify-content: center;
+    grid-column-gap: 40px;
+    grid-template-areas: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "obra1 obra2" "obra3 obra4"; } }
